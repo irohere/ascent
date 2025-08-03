@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default to Ghibli Theme */
+  --bg-primary: #f4f1e9; /* Parchment Paper */
+  --bg-secondary: #e0e5d6; /* Muted Green */
+  --text-primary: #3a352f; /* Dark Brown */
+  --text-secondary: #6b6359;
+  --accent-primary: #d47f63; /* Terracotta Orange */
+  --accent-secondary: #8aa895; /* Sage Green */
+  --border-color: #c9c1b5;
+}
+
+.dark {
+  --bg-primary: #1a1b26; /* Deep Night Blue */
+  --bg-secondary: #24283b;
+  --text-primary: #c0caf5; /* Light Lavender */
+  --text-secondary: #a9b1d6;
+  --accent-primary: #bb9af7; /* Royal Purple */
+  --accent-secondary: #7aa2f7; /* Bright Blue */
+  --border-color: #3b4261;
+}
+
+.light {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --accent-primary: #4f46e5; /* Indigo */
+  --accent-secondary: #0ea5e9; /* Sky Blue */
+  --border-color: #e2e8f0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
